@@ -1,5 +1,5 @@
 export class Clientes {
-  idCliente: number;
+  id_tb_cliente: number;
   nombre: string;
   apellido: string;
   correo: string;

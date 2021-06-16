@@ -14,8 +14,11 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MaterialModule } from './material/material.module';
 import { HttpClientModule } from '@angular/common/http';
+import { ClientesEdicionComponent } from './pages/clientes/clientes-edicion/clientes-edicion.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+
 @NgModule({
-  declarations: [AppComponent, ClientesComponent],
+  declarations: [AppComponent, ClientesComponent, ClientesEdicionComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -27,6 +30,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
